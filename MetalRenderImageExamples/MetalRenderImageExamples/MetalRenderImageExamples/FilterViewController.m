@@ -195,6 +195,7 @@
             _filter = [MRGammaFilter filterWithGammaFactor:self.value context:self.context];
         }
             break;
+            
         case METALRENDER_WHITEBALANCE:
         {
             self.minimumValue = 2500;
@@ -204,6 +205,7 @@
             _filter = [[MRWhiteBalanceFilter alloc] initWithContext:self.context];
         }
             break;
+            
         case METALRENDER_MONOCHROME:
         {
             self.minimumValue = 0;
@@ -225,6 +227,14 @@
             self.value = 0;
             
             _filter = [[MRCharpenFilter alloc] initWithContext:self.context];
+        }
+            break;
+        
+        case METALRENDER_SOBEL_DETECT:
+        {
+            _filter = [[MRSobelFilter alloc] initWithContext:self.context];
+            
+            self.slider.hidden = YES;
         }
             break;
             
@@ -352,6 +362,9 @@
         }
             break;
         
+        case METALRENDER_SOBEL_DETECT:
+            break;
+            
         case METALRENDER_DISSOLVEBLEND:
         {
             [(MRDissolveBlendFilter *)_filter setMix:factor];

@@ -95,7 +95,11 @@
         case METALRENDER_SHARPENESS:
             title = @"Sharpen";
             break;
-    
+            
+        case METALRENDER_SOBEL_DETECT:
+            title = @"Sobel Edge Detect";
+            break;
+            
         case METALRENDER_DISSOLVEBLEND:
             title = @"Dissolve Blend";
             break;
@@ -103,6 +107,8 @@
         case METALRENDER_LIGHTENBLEND:
             title = @"Lighten Blend";
             break;
+            
+        
             
         default:
             break;

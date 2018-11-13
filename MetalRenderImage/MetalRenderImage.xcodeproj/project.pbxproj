@@ -45,6 +45,9 @@
 		36853DCD21883CE6006CBB5A /* MRWhiteBalanceFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 36853DCB21883CE6006CBB5A /* MRWhiteBalanceFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36853DCE21883CE6006CBB5A /* MRWhiteBalanceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36853DCC21883CE6006CBB5A /* MRWhiteBalanceFilter.m */; };
 		36853DD021883F7C006CBB5A /* WhiteBalance.metal in Sources */ = {isa = PBXBuildFile; fileRef = 36853DCF21883F7C006CBB5A /* WhiteBalance.metal */; };
+		36B44F07219AF0D200DC7DA7 /* MRSobelFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B44F05219AF0D200DC7DA7 /* MRSobelFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36B44F08219AF0D200DC7DA7 /* MRSobelFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B44F06219AF0D200DC7DA7 /* MRSobelFilter.m */; };
+		36B44F0A219AF0F300DC7DA7 /* SobelFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 36B44F09219AF0F300DC7DA7 /* SobelFilter.metal */; };
 		36CBC016218AA4F4003DA3E3 /* MRDissolveBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CBC014218AA4F3003DA3E3 /* MRDissolveBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36CBC017218AA4F4003DA3E3 /* MRDissolveBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CBC015218AA4F3003DA3E3 /* MRDissolveBlendFilter.m */; };
 		36CBC019218AA50C003DA3E3 /* DissolveBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 36CBC018218AA50C003DA3E3 /* DissolveBlendFilter.metal */; };
@@ -101,6 +104,9 @@
 		36853DCB21883CE6006CBB5A /* MRWhiteBalanceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRWhiteBalanceFilter.h; sourceTree = "<group>"; };
 		36853DCC21883CE6006CBB5A /* MRWhiteBalanceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRWhiteBalanceFilter.m; sourceTree = "<group>"; };
 		36853DCF21883F7C006CBB5A /* WhiteBalance.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = WhiteBalance.metal; sourceTree = "<group>"; };
+		36B44F05219AF0D200DC7DA7 /* MRSobelFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRSobelFilter.h; sourceTree = "<group>"; };
+		36B44F06219AF0D200DC7DA7 /* MRSobelFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRSobelFilter.m; sourceTree = "<group>"; };
+		36B44F09219AF0F300DC7DA7 /* SobelFilter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SobelFilter.metal; sourceTree = "<group>"; };
 		36CBC014218AA4F3003DA3E3 /* MRDissolveBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDissolveBlendFilter.h; sourceTree = "<group>"; };
 		36CBC015218AA4F3003DA3E3 /* MRDissolveBlendFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDissolveBlendFilter.m; sourceTree = "<group>"; };
 		36CBC018218AA50C003DA3E3 /* DissolveBlendFilter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DissolveBlendFilter.metal; sourceTree = "<group>"; };
@@ -189,6 +195,8 @@
 				36CBC015218AA4F3003DA3E3 /* MRDissolveBlendFilter.m */,
 				36CBC024218AC809003DA3E3 /* MRLightenBlendFilter.h */,
 				36CBC025218AC809003DA3E3 /* MRLightenBlendFilter.m */,
+				36B44F05219AF0D200DC7DA7 /* MRSobelFilter.h */,
+				36B44F06219AF0D200DC7DA7 /* MRSobelFilter.m */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -224,6 +232,7 @@
 				36EC9418218854E600A82941 /* Monochrome.metal */,
 				36EC941E2188621400A82941 /* Charpeness.metal */,
 				36CBC018218AA50C003DA3E3 /* DissolveBlendFilter.metal */,
+				36B44F09219AF0F300DC7DA7 /* SobelFilter.metal */,
 			);
 			path = shader;
 			sourceTree = "<group>";
@@ -249,6 +258,7 @@
 				36853DC421882A58006CBB5A /* MRBrightnessFilter.h in Headers */,
 				36853DC521882A58006CBB5A /* MRContrastFilter.h in Headers */,
 				36853DBD21882A58006CBB5A /* MRColorInvertFilter.h in Headers */,
+				36B44F07219AF0D200DC7DA7 /* MRSobelFilter.h in Headers */,
 				36EC94162188544C00A82941 /* MRMonochromeFilter.h in Headers */,
 				36CBC016218AA4F4003DA3E3 /* MRDissolveBlendFilter.h in Headers */,
 				36853D522187FA3D006CBB5A /* MRMetalContext.h in Headers */,
@@ -337,7 +347,9 @@
 				36CBC017218AA4F4003DA3E3 /* MRDissolveBlendFilter.m in Sources */,
 				36853DB221882A4B006CBB5A /* MRSaturationAdjustmentFilter.m in Sources */,
 				36853DCE21883CE6006CBB5A /* MRWhiteBalanceFilter.m in Sources */,
+				36B44F08219AF0D200DC7DA7 /* MRSobelFilter.m in Sources */,
 				36853DAF21882A4B006CBB5A /* MRHueFilter.m in Sources */,
+				36B44F0A219AF0F300DC7DA7 /* SobelFilter.metal in Sources */,
 				36853DB021882A4B006CBB5A /* MRRGBFilter.m in Sources */,
 				36EC9419218854E600A82941 /* Monochrome.metal in Sources */,
 				36853D5D2187FB48006CBB5A /* MRGaussianBlurFilter.m in Sources */,
