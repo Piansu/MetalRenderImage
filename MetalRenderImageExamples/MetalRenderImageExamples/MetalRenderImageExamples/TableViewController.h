@@ -26,6 +26,7 @@ typedef enum {
     
     METALRENDER_DISSOLVEBLEND,
     METALRENDER_LIGHTENBLEND,
+    METALRENDER_LOWPASS,
     
     METAL_RENDER_NUMFILTERS
 } MetalRenderImageFilterType;

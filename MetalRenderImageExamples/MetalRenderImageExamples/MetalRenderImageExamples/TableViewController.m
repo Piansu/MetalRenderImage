@@ -108,7 +108,8 @@
             title = @"Lighten Blend";
             break;
             
-        
+        case METALRENDER_LOWPASS:
+            title = @"Low Pass";
             
         default:
             break;

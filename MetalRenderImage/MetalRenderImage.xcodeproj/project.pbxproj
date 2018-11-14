@@ -61,6 +61,9 @@
 		36EC941F2188621400A82941 /* Charpeness.metal in Sources */ = {isa = PBXBuildFile; fileRef = 36EC941E2188621400A82941 /* Charpeness.metal */; };
 		36EC942921886FC100A82941 /* MRImageTwoInputFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 36EC942721886FC100A82941 /* MRImageTwoInputFilter.h */; };
 		36EC942A21886FC100A82941 /* MRImageTwoInputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EC942821886FC100A82941 /* MRImageTwoInputFilter.m */; };
+		36EE6E6A219C54B2005DA163 /* MRLowPassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 36EE6E68219C54B2005DA163 /* MRLowPassFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36EE6E6B219C54B2005DA163 /* MRLowPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE6E69219C54B2005DA163 /* MRLowPassFilter.m */; };
+		36EE6E6D219C54DC005DA163 /* LowPassFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 36EE6E6C219C54DC005DA163 /* LowPassFilter.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +124,9 @@
 		36EC941E2188621400A82941 /* Charpeness.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Charpeness.metal; sourceTree = "<group>"; };
 		36EC942721886FC100A82941 /* MRImageTwoInputFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRImageTwoInputFilter.h; sourceTree = "<group>"; };
 		36EC942821886FC100A82941 /* MRImageTwoInputFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRImageTwoInputFilter.m; sourceTree = "<group>"; };
+		36EE6E68219C54B2005DA163 /* MRLowPassFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRLowPassFilter.h; sourceTree = "<group>"; };
+		36EE6E69219C54B2005DA163 /* MRLowPassFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRLowPassFilter.m; sourceTree = "<group>"; };
+		36EE6E6C219C54DC005DA163 /* LowPassFilter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LowPassFilter.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,8 @@
 				36CBC025218AC809003DA3E3 /* MRLightenBlendFilter.m */,
 				36B44F05219AF0D200DC7DA7 /* MRSobelFilter.h */,
 				36B44F06219AF0D200DC7DA7 /* MRSobelFilter.m */,
+				36EE6E68219C54B2005DA163 /* MRLowPassFilter.h */,
+				36EE6E69219C54B2005DA163 /* MRLowPassFilter.m */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -233,6 +241,7 @@
 				36EC941E2188621400A82941 /* Charpeness.metal */,
 				36CBC018218AA50C003DA3E3 /* DissolveBlendFilter.metal */,
 				36B44F09219AF0F300DC7DA7 /* SobelFilter.metal */,
+				36EE6E6C219C54DC005DA163 /* LowPassFilter.metal */,
 			);
 			path = shader;
 			sourceTree = "<group>";
@@ -263,6 +272,7 @@
 				36CBC016218AA4F4003DA3E3 /* MRDissolveBlendFilter.h in Headers */,
 				36853D522187FA3D006CBB5A /* MRMetalContext.h in Headers */,
 				36853DCD21883CE6006CBB5A /* MRWhiteBalanceFilter.h in Headers */,
+				36EE6E6A219C54B2005DA163 /* MRLowPassFilter.h in Headers */,
 				36853DAC21882A4B006CBB5A /* MRGrayscaleFilter.h in Headers */,
 				36853D572187FA3D006CBB5A /* MRImageFilter.h in Headers */,
 				36853DB121882A4B006CBB5A /* MRSaturationAdjustmentFilter.h in Headers */,
@@ -349,6 +359,7 @@
 				36853DCE21883CE6006CBB5A /* MRWhiteBalanceFilter.m in Sources */,
 				36B44F08219AF0D200DC7DA7 /* MRSobelFilter.m in Sources */,
 				36853DAF21882A4B006CBB5A /* MRHueFilter.m in Sources */,
+				36EE6E6B219C54B2005DA163 /* MRLowPassFilter.m in Sources */,
 				36B44F0A219AF0F300DC7DA7 /* SobelFilter.metal in Sources */,
 				36853DB021882A4B006CBB5A /* MRRGBFilter.m in Sources */,
 				36EC9419218854E600A82941 /* Monochrome.metal in Sources */,
@@ -356,6 +367,7 @@
 				36853D542187FA3D006CBB5A /* MRMainBundleTextureProvider.m in Sources */,
 				36853D592187FA3D006CBB5A /* MRImageView.m in Sources */,
 				36853D562187FA3D006CBB5A /* MRMetalContext.m in Sources */,
+				36EE6E6D219C54DC005DA163 /* LowPassFilter.metal in Sources */,
 				36853D512187FA3D006CBB5A /* MRImageFilter.m in Sources */,
 				36853DAE21882A4B006CBB5A /* MRGrayscaleFilter.m in Sources */,
 				36853DC621882A58006CBB5A /* MRExposureFilter.m in Sources */,

@@ -13,5 +13,4 @@
 
 @property (nonatomic, strong) id<MRTextureProvider> secondProvider;
 
-
 @end

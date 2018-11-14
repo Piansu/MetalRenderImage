@@ -264,6 +264,18 @@
         }
             break;
             
+        case METALRENDER_LOWPASS:
+        {
+            self.minimumValue = 0;
+            self.maximumValue = 1;
+            self.value = 0;
+            
+            MRLowPassFilter *filter = [[MRLowPassFilter alloc] initWithContext:self.context];
+            
+            _filter = filter;
+        }
+            break;
+            
         default:
         {
             _filter = nil;
@@ -374,6 +386,12 @@
         case METALRENDER_LIGHTENBLEND:
             break;
         
+        case METALRENDER_LOWPASS:
+        {
+            [(MRLowPassFilter *)_filter setMix:factor];
+        }
+            break;
+            
         default:
             break;
     }

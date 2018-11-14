@@ -35,6 +35,7 @@ FOUNDATION_EXPORT const unsigned char MetalRenderImageVersionString[];
 #import <MRWhiteBalanceFilter.h>
 #import <MRMonochromeFilter.h>
 #import <MRCharpenFilter.h>
+#import <MRSobelFilter.h>
 #import <MRDissolveBlendFilter.h>
 #import <MRLightenBlendFilter.h>
-#import <MRSobelFilter.h>
+#import <MRLowPassFilter.h>
