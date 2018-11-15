@@ -82,7 +82,6 @@
 
 - (void)setRadius:(float)radius
 {
-    self.dirty = YES;
     _radius = radius;
     _sigma = radius / 2;
     self.blurWeightTexture = nil;
@@ -90,7 +89,6 @@
 
 - (void)setSigma:(float)sigma
 {
-    self.dirty = YES;
     _sigma = sigma;
     self.blurWeightTexture = nil;
 }

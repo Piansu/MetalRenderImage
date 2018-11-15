@@ -30,7 +30,6 @@
 
 - (void)setContrastFactor:(float)contrastFactor
 {
-    self.dirty = YES;
     _contrastFactor = contrastFactor;
 }
 

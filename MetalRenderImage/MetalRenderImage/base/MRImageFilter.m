@@ -13,7 +13,7 @@
 
 @implementation MRImageFilter
 
-@synthesize dirty=_dirty;
+@synthesize initialized=_initialized;
 @synthesize provider=_provider;
 
 - (instancetype)initWithContext:(MRMetalContext *)context;
@@ -35,7 +35,7 @@
             NSLog(@"Error occurred when building compute pipeline for function %@", functionName);
             return nil;
         }
-        _dirty = YES;
+        _initialized = YES;
     }
     
     return self;
@@ -99,7 +99,7 @@
 
 - (id<MTLTexture>)texture
 {
-    if (self.isDirty)
+    if (self.isInitialized)
     {
         [self applyFilter];
     }

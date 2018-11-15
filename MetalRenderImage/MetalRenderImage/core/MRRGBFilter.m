@@ -36,19 +36,16 @@ struct AdjustRGBUniforms
 
 - (void)setRedFactor:(float)redFactor;
 {
-    self.dirty = YES;
     _redFactor = redFactor;
 }
 
 - (void)setGreenFactor:(float)greenFactor
 {
-    self.dirty = YES;
     _greenFactor = greenFactor;
 }
 
 - (void)setBlueFactor:(float)blueFactor
 {
-    self.dirty = YES;
     _blueFactor = blueFactor;
 }
 

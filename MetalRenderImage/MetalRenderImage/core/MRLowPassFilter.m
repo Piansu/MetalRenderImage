@@ -106,7 +106,7 @@
 
 - (id<MTLTexture>)texture
 {
-    if (self.isDirty)
+    if (self.isInitialized)
     {
         [self applyFilter];
     }

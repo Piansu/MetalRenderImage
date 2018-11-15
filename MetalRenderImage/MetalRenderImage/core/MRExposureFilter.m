@@ -28,7 +28,6 @@
 
 - (void)setExposureFactor:(float)exposureFactor
 {
-    self.dirty = YES;
     _exposureFactor = exposureFactor;
 }
 

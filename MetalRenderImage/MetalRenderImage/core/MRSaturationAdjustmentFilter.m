@@ -21,7 +21,6 @@
 
 - (void)setSaturationFactor:(float)saturationFactor
 {
-    self.dirty = YES;
     _saturationFactor = saturationFactor;
 }
 

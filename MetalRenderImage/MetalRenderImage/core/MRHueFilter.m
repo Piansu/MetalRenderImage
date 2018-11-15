@@ -29,7 +29,6 @@
 
 - (void)setHueFactor:(float)hueFactor
 {
-    self.dirty = YES;
     _hueFactor = fmodf(hueFactor, 360.0) * M_PI/180;
 }
 

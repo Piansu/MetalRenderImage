@@ -29,7 +29,6 @@
 
 - (void)setBrightnessFactor:(float)brightnessFactor
 {
-    self.dirty = YES;
     _brightnessFactor = brightnessFactor;
 }
 

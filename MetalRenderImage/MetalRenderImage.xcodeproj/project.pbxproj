@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3658A19C218B0B6F008AB6AC /* MRVideoCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3658A19A218B0B6E008AB6AC /* MRVideoCaptureDevice.m */; };
 		3658A19D218B0B6F008AB6AC /* MRVideoCaptureDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 3658A19B218B0B6E008AB6AC /* MRVideoCaptureDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		366B5598219E983A007F629D /* MRLuminanceThresholdFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 366B5596219E983A007F629D /* MRLuminanceThresholdFilter.h */; };
+		366B5599219E983A007F629D /* MRLuminanceThresholdFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 366B5597219E983A007F629D /* MRLuminanceThresholdFilter.m */; };
+		366B559B219E9913007F629D /* LuminanceThreshold.metal in Sources */ = {isa = PBXBuildFile; fileRef = 366B559A219E9913007F629D /* LuminanceThreshold.metal */; };
+		366B55A8219EAC24007F629D /* ComparisonFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 366B55A7219EAC24007F629D /* ComparisonFilter.metal */; };
+		366B55AB219EADC1007F629D /* MRMotionDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 366B55A9219EADC1007F629D /* MRMotionDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		366B55AC219EADC1007F629D /* MRMotionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 366B55AA219EADC1007F629D /* MRMotionDetector.m */; };
 		36853D3F2187FA10006CBB5A /* MetalRenderImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 36853D3D2187FA10006CBB5A /* MetalRenderImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36853D512187FA3D006CBB5A /* MRImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36853D472187FA3C006CBB5A /* MRImageFilter.m */; };
 		36853D522187FA3D006CBB5A /* MRMetalContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 36853D482187FA3C006CBB5A /* MRMetalContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,12 +69,17 @@
 		36EC942A21886FC100A82941 /* MRImageTwoInputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EC942821886FC100A82941 /* MRImageTwoInputFilter.m */; };
 		36EE6E6A219C54B2005DA163 /* MRLowPassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 36EE6E68219C54B2005DA163 /* MRLowPassFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36EE6E6B219C54B2005DA163 /* MRLowPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE6E69219C54B2005DA163 /* MRLowPassFilter.m */; };
-		36EE6E6D219C54DC005DA163 /* LowPassFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 36EE6E6C219C54DC005DA163 /* LowPassFilter.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3658A19A218B0B6E008AB6AC /* MRVideoCaptureDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRVideoCaptureDevice.m; sourceTree = "<group>"; };
 		3658A19B218B0B6E008AB6AC /* MRVideoCaptureDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRVideoCaptureDevice.h; sourceTree = "<group>"; };
+		366B5596219E983A007F629D /* MRLuminanceThresholdFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRLuminanceThresholdFilter.h; sourceTree = "<group>"; };
+		366B5597219E983A007F629D /* MRLuminanceThresholdFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRLuminanceThresholdFilter.m; sourceTree = "<group>"; };
+		366B559A219E9913007F629D /* LuminanceThreshold.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LuminanceThreshold.metal; sourceTree = "<group>"; };
+		366B55A7219EAC24007F629D /* ComparisonFilter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ComparisonFilter.metal; sourceTree = "<group>"; };
+		366B55A9219EADC1007F629D /* MRMotionDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRMotionDetector.h; sourceTree = "<group>"; };
+		366B55AA219EADC1007F629D /* MRMotionDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRMotionDetector.m; sourceTree = "<group>"; };
 		36853D3A2187FA10006CBB5A /* MetalRenderImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MetalRenderImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36853D3D2187FA10006CBB5A /* MetalRenderImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalRenderImage.h; sourceTree = "<group>"; };
 		36853D3E2187FA10006CBB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,7 +137,6 @@
 		36EC942821886FC100A82941 /* MRImageTwoInputFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRImageTwoInputFilter.m; sourceTree = "<group>"; };
 		36EE6E68219C54B2005DA163 /* MRLowPassFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRLowPassFilter.h; sourceTree = "<group>"; };
 		36EE6E69219C54B2005DA163 /* MRLowPassFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRLowPassFilter.m; sourceTree = "<group>"; };
-		36EE6E6C219C54DC005DA163 /* LowPassFilter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LowPassFilter.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +207,8 @@
 				36EC94152188544C00A82941 /* MRMonochromeFilter.m */,
 				36EC941A2188616A00A82941 /* MRCharpenFilter.h */,
 				36EC941B2188616A00A82941 /* MRCharpenFilter.m */,
+				366B5596219E983A007F629D /* MRLuminanceThresholdFilter.h */,
+				366B5597219E983A007F629D /* MRLuminanceThresholdFilter.m */,
 				36CBC014218AA4F3003DA3E3 /* MRDissolveBlendFilter.h */,
 				36CBC015218AA4F3003DA3E3 /* MRDissolveBlendFilter.m */,
 				36CBC024218AC809003DA3E3 /* MRLightenBlendFilter.h */,
@@ -205,6 +217,8 @@
 				36B44F06219AF0D200DC7DA7 /* MRSobelFilter.m */,
 				36EE6E68219C54B2005DA163 /* MRLowPassFilter.h */,
 				36EE6E69219C54B2005DA163 /* MRLowPassFilter.m */,
+				366B55A9219EADC1007F629D /* MRMotionDetector.h */,
+				366B55AA219EADC1007F629D /* MRMotionDetector.m */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -240,8 +254,9 @@
 				36EC9418218854E600A82941 /* Monochrome.metal */,
 				36EC941E2188621400A82941 /* Charpeness.metal */,
 				36CBC018218AA50C003DA3E3 /* DissolveBlendFilter.metal */,
+				366B559A219E9913007F629D /* LuminanceThreshold.metal */,
 				36B44F09219AF0F300DC7DA7 /* SobelFilter.metal */,
-				36EE6E6C219C54DC005DA163 /* LowPassFilter.metal */,
+				366B55A7219EAC24007F629D /* ComparisonFilter.metal */,
 			);
 			path = shader;
 			sourceTree = "<group>";
@@ -256,6 +271,7 @@
 				36853D552187FA3D006CBB5A /* MRImageView.h in Headers */,
 				36EC941C2188616A00A82941 /* MRCharpenFilter.h in Headers */,
 				36CBC026218AC809003DA3E3 /* MRLightenBlendFilter.h in Headers */,
+				366B55AB219EADC1007F629D /* MRMotionDetector.h in Headers */,
 				36853D5E2187FB48006CBB5A /* MRGaussianBlurFilter.h in Headers */,
 				36853D3F2187FA10006CBB5A /* MetalRenderImage.h in Headers */,
 				36853D532187FA3D006CBB5A /* MRTextureProvider.h in Headers */,
@@ -279,6 +295,7 @@
 				36853DAB21882A4B006CBB5A /* MRRGBFilter.h in Headers */,
 				36EC942921886FC100A82941 /* MRImageTwoInputFilter.h in Headers */,
 				36853DC121882A58006CBB5A /* MRGammaFilter.h in Headers */,
+				366B5598219E983A007F629D /* MRLuminanceThresholdFilter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +371,7 @@
 				36CBC027218AC809003DA3E3 /* MRLightenBlendFilter.m in Sources */,
 				36853DC321882A58006CBB5A /* MRBrightnessFilter.m in Sources */,
 				36853DC021882A58006CBB5A /* MRGammaFilter.m in Sources */,
+				366B5599219E983A007F629D /* MRLuminanceThresholdFilter.m in Sources */,
 				36CBC017218AA4F4003DA3E3 /* MRDissolveBlendFilter.m in Sources */,
 				36853DB221882A4B006CBB5A /* MRSaturationAdjustmentFilter.m in Sources */,
 				36853DCE21883CE6006CBB5A /* MRWhiteBalanceFilter.m in Sources */,
@@ -364,10 +382,11 @@
 				36853DB021882A4B006CBB5A /* MRRGBFilter.m in Sources */,
 				36EC9419218854E600A82941 /* Monochrome.metal in Sources */,
 				36853D5D2187FB48006CBB5A /* MRGaussianBlurFilter.m in Sources */,
+				366B55AC219EADC1007F629D /* MRMotionDetector.m in Sources */,
+				366B55A8219EAC24007F629D /* ComparisonFilter.metal in Sources */,
 				36853D542187FA3D006CBB5A /* MRMainBundleTextureProvider.m in Sources */,
 				36853D592187FA3D006CBB5A /* MRImageView.m in Sources */,
 				36853D562187FA3D006CBB5A /* MRMetalContext.m in Sources */,
-				36EE6E6D219C54DC005DA163 /* LowPassFilter.metal in Sources */,
 				36853D512187FA3D006CBB5A /* MRImageFilter.m in Sources */,
 				36853DAE21882A4B006CBB5A /* MRGrayscaleFilter.m in Sources */,
 				36853DC621882A58006CBB5A /* MRExposureFilter.m in Sources */,
@@ -377,6 +396,7 @@
 				36853DD021883F7C006CBB5A /* WhiteBalance.metal in Sources */,
 				36EC942A21886FC100A82941 /* MRImageTwoInputFilter.m in Sources */,
 				36CBC019218AA50C003DA3E3 /* DissolveBlendFilter.metal in Sources */,
+				366B559B219E9913007F629D /* LuminanceThreshold.metal in Sources */,
 				36EC94172188544C00A82941 /* MRMonochromeFilter.m in Sources */,
 				3658A19C218B0B6F008AB6AC /* MRVideoCaptureDevice.m in Sources */,
 				36853D9C2188119C006CBB5A /* ImageViewShaders.metal in Sources */,

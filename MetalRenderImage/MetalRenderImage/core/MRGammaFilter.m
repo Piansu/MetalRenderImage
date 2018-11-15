@@ -29,7 +29,6 @@
 
 - (void)setGammaFactor:(float)gammaFactor
 {
-    self.dirty = YES;
     _gammaFactor = gammaFactor;
 }
 
