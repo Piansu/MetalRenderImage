@@ -237,7 +237,17 @@
             self.slider.hidden = YES;
         }
             break;
+        
+        case METALRENDER_LUMINANCE_THRESHOLD:
+        {
+            self.minimumValue = 0;
+            self.maximumValue = 1;
+            self.value = 0.5;
             
+            _filter = [[MRLuminanceThresholdFilter alloc] initWithContext:self.context];
+        }
+            break;
+        
         case METALRENDER_DISSOLVEBLEND:
         {
             self.minimumValue = 0;
@@ -268,14 +278,26 @@
         {
             self.minimumValue = 0;
             self.maximumValue = 1;
-            self.value = 0;
+            self.value = 0.7;
             
             MRLowPassFilter *filter = [[MRLowPassFilter alloc] initWithContext:self.context];
             
             _filter = filter;
         }
             break;
+        
+        case METALRENDER_MOTION_DETECTOR:
+        {
+            self.minimumValue = 0;
+            self.maximumValue = 1;
+            self.value = 0.5;
             
+            MRMotionDetector *filter = [[MRMotionDetector alloc] initWithContext:self.context];
+            
+            _filter = filter;
+        }
+            break;
+        
         default:
         {
             _filter = nil;
@@ -376,7 +398,13 @@
         
         case METALRENDER_SOBEL_DETECT:
             break;
-            
+        
+        case METALRENDER_LUMINANCE_THRESHOLD:
+        {
+            [(MRLuminanceThresholdFilter *)_filter setThreshold:factor];
+        }
+            break;
+        
         case METALRENDER_DISSOLVEBLEND:
         {
             [(MRDissolveBlendFilter *)_filter setMix:factor];
@@ -391,7 +419,13 @@
             [(MRLowPassFilter *)_filter setMix:factor];
         }
             break;
-            
+        
+        case METALRENDER_MOTION_DETECTOR:
+        {
+            [(MRMotionDetector *)_filter setLowPassStrength:factor];
+        }
+            break;
+        
         default:
             break;
     }

@@ -99,7 +99,11 @@
         case METALRENDER_SOBEL_DETECT:
             title = @"Sobel Edge Detect";
             break;
-            
+        
+        case METALRENDER_LUMINANCE_THRESHOLD:
+            title = @"Luminance Threshold";
+            break;
+        
         case METALRENDER_DISSOLVEBLEND:
             title = @"Dissolve Blend";
             break;
@@ -110,7 +114,12 @@
             
         case METALRENDER_LOWPASS:
             title = @"Low Pass";
-            
+            break;
+        
+        case METALRENDER_MOTION_DETECTOR:
+            title = @"Motion Detector";
+            break;
+        
         default:
             break;
     }
